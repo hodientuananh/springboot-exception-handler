@@ -1,0 +1,14 @@
+package benkinmat.github.io.springbootexceptionhandler.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+@Configuration
+@EnableTransactionManagement
+@EnableJpaRepositories("benkinmat.github.io.springbootexceptionhandler.repository")
+@EnableJpaAuditing
+public class JpaAuditConfig {
+
+}
